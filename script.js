@@ -70,14 +70,20 @@ function deleteTask(i) {
 
 function toggleDone(i) {
     tasks[i].done = !tasks[i].done;
-    if (tasks[i].done) pauseTimer(i);
+    if (tasks[i].done) {
+        pauseTimer(i);
+        tasks[i].manualStart = false; // Ensure the task is no longer marked as active
+    }
     renderTasks();
 }
 
 function toggleSubDone(i, j) {
     const sub = tasks[i].subtasks[j];
     sub.done = !sub.done;
-    if (sub.done) pauseSub(i, j);
+    if (sub.done) {
+        pauseSub(i, j);
+        sub.manualStart = false; // Ensure the subtask is no longer marked as active
+    }
     renderSubtasks(i);
 }
 

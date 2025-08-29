@@ -98,9 +98,9 @@ body {
 
 .done {
 
-    border: 1px solid #4caf50 !important;
+    border: 1px solid #444 !important; /* Рамка как у неактивной задачи */
 
-    box-shadow: 0 0 8px 2px #4caf50;
+    box-shadow: none !important; /* Убираем свечение */
 
     opacity: 0.8;
 
