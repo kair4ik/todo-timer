@@ -1,0 +1,127 @@
+body {
+
+    background: #1e1e1e;
+
+    color: #fff;
+
+    font-family: sans-serif;
+
+    padding: 20px;
+
+}
+
+.task, .subtask {
+
+    padding: 10px;
+
+    margin: 10px 0;
+
+    background: #2a2a2a;
+
+    border: 1px solid #444;
+
+    border-radius: 5px;
+
+}
+
+.subtask {
+
+    margin-left: 20px;
+
+}
+
+.btn {
+
+    margin: 5px 5px 5px 0;
+
+    padding: 5px 10px;
+
+    cursor: pointer;
+
+    border: none;
+
+    font-size: 14px;
+
+}
+
+.start { background: #007bff; color: #fff; }
+
+.pause, .delete { background: #dc3545; color: #fff; }
+
+.done-btn { background: #4caf50; color: #fff; }
+
+.mode-btn {
+
+    background: #444;
+
+    color: #fff;
+
+    font-size: 18px;
+
+    padding: 5px 10px;
+
+}
+
+.mode-btn.active { background: #007bff; }
+
+.active-task.mode-productive {
+
+    box-shadow: 0 0 8px 2px limegreen;
+
+    border: 1px solid limegreen;
+
+}
+
+.active-task.mode-exploration {
+
+    box-shadow: 0 0 8px 2px cyan;
+
+    border: 1px solid cyan;
+
+}
+
+.active-task.mode-stalling {
+
+    box-shadow: 0 0 8px 2px orange;
+
+    border: 1px solid orange;
+
+}
+
+.inactive {
+
+    box-shadow: none !important;
+
+    border: 1px solid #444 !important;
+
+}
+
+.done {
+
+    border: 1px solid #4caf50 !important;
+
+    box-shadow: 0 0 8px 2px #4caf50;
+
+    opacity: 0.8;
+
+}
+
+.done-indicator {
+
+    display: inline-block;
+
+    background: #4caf50;
+
+    color: white;
+
+    border-radius: 50%;
+
+    padding: 5px 10px;
+
+    font-size: 16px;
+
+    margin-left: 10px;
+
+    cursor: pointer;
+
+}
